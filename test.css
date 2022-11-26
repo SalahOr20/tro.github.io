@@ -1,0 +1,415 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth ;
+
+}
+
+h1{
+
+    font-family: "torus Notcher";
+}
+
+/** header**/
+header{
+    height: 120px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+   
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center ;
+}
+#click{
+    display: none;
+    font-size: 30px;
+}
+header .container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center ;
+  
+}
+
+header .containern a{
+    margin: 20px;
+    font-size: 1.2em;  
+}
+
+/*****Section 1***/
+@media(max-width:2000px){
+    
+    .first{
+        height: 100vh;
+        width: 100%;
+        display:flex ;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+background-image: url("img/13.png");
+background-repeat: no-repeat;
+background-position: top right;
+background-size: 600px;
+      
+    }
+  .first .container{
+width: 85%;
+margin: 0 auto ;
+height: 100px;
+}
+    .first h1{
+        color:#31489f;
+        font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    .first button{
+        width: 250px;
+        height: 70px;
+        border-radius: 50px;
+       font-size: 1.5em;
+       color:#31489f  ;
+       position: relative;
+       margin-bottom:15px ;
+        border: 3px solid #31489f  ;
+        background-color: white;
+overflow: hidden;
+z-index: 2;
+    }
+ 
+    .first button::before{
+      content: "";
+        width: 280px;
+        height: 70px;
+        border-radius: 50px;
+      position: absolute ;
+       
+       margin-bottom: 70px;
+    top: -2px;
+    left: -2px;
+        background-color:   #31489f  ;
+transform: translate(-100% );
+transition: 0.5s;
+z-index: -1  ;
+    }
+    .first button:hover {
+        color: white;
+        width: 280px;
+        transition: 0.5s;
+
+       
+    }
+    .first button:hover #flesh{
+       transform:scale(1);
+       margin-left: 10px;
+       transition: 0.3s;
+    }
+    .first button:hover::before{
+        
+  transform: translate(0% );
+      }
+      button #flesh{
+        margin-left: -10px;
+       transform:scale(0)
+
+       
+    }
+    #deco{
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        transform: translateY(-400%);
+    }
+
+    .second{
+      
+       height: 190vh;
+       width: 100%;
+       background-color: #232323; 
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+    }
+    .second img{
+        height: 400px;
+        height: 350px;
+    }
+    .second h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+    }
+    .second h1::before{
+        content:"";
+        position: absolute;
+        height: 30px;
+        width: 200px;
+        border-radius:20px ;
+        background-color: #31489f;
+        clip-path: polygon(50% 0%, 85% 0, 100% 0, 100% 89%, 65% 52%, 49% 87%, 21% 63%, 0 100%, 0 0, 21% 0);  
+      
+       margin-top: 70px;
+         left: 50%;
+         transform: translateX(-50%)
+     }
+    
+    .second .lwla{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .lwla .lwla-text{
+        width: 40%;
+        height: auto;
+        text-align: justify;
+     
+    }
+    .lwla .lwla-text h2{
+        font-size: 1.7em;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+    .lwla .lwla-text p{
+        font-size: 1.2em;
+     margin-left: 25px;
+        color: #d4d2d2cd;
+    }
+    .second .tanya{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tanya .tanya-text{
+        width: 40%;
+        height: auto;
+       
+     
+    }
+    .tanya .tanya-text h2{
+        font-size: 1.7em;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+    .tanya .tanya-text p{
+        font-size: 1.2em;
+       margin-left: 25px;
+        color: #d4d2d2cd;
+    }
+    
+  
+  
+  
+  
+    .second .tanya{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+}
+
+   
+  
+
+.sup{
+    border-radius: 50px;
+    height: 200px;
+    width: 350px;
+    display: none;
+}
+
+@media (max-width:1050px){
+    .sup{
+        display: inline;
+        margin-top: 20px;
+    }
+    header{
+      
+        background-color: #5163a4;
+    }
+  
+    header .containern a{
+        color: white;
+        
+    }
+    .first{
+ 
+   
+background-image: none;
+    }
+    .first .container{
+        margin-top:150px ;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+
+    }
+   header{
+    flex-direction: column;
+   } 
+   header .containern a{
+    margin: 0px;
+   }
+   header .containern{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+    .first .container h1{
+        font-size: 4em;
+    }
+    .second h1{
+        font-size: 2em;
+    }
+    .second h1::before{
+        content:"";
+        position: absolute;
+        height: 30px;
+        width: 150px;
+        margin-top: 40px;
+      
+     }
+     .second img{
+        height: 320px;
+        height: 250px;
+    }
+    .lwla .lwla-text h2{
+        font-size: 1.4em;
+     
+    }
+    .lwla .lwla-text p{
+        font-size: 1em;
+  
+    }
+    .tanya .tanya-text h2{
+        font-size: 1.4em;
+        
+    }
+    .tanya .tanya-text p{
+        font-size: 1em;
+    
+     
+    }
+    
+ 
+}
+
+@media (max-width:500px){
+  
+  
+  
+    header{
+        flex-direction: row;
+    }
+    .first .container h1{
+        font-size: 2.5em;
+    }
+     .sup{
+        height: 170px;
+        width: 250px;
+     }
+    #click{
+        display: block;
+        font-size: 30px;
+    }
+    .containern a{
+       display: none;
+    }
+  .m{
+     margin-top: 30px;
+        height: 10vh;
+     border-radius: 20px;
+       
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: space-around;
+         top:100px;
+      position: fixed;
+       transition:all 0.5s ease ;
+        background-color: #31489f;
+   
+    }
+.m a{
+   display: block;
+}
+
+.second .tanya{
+   
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.second .lwla{
+   
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tanya .tanya-text{
+    width: 90%;
+    height: auto;
+   
+ 
+}
+.tanya .tanya-text h2{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+   margin-top: 10px;
+}
+.tanya .tanya-text p{
+    font-size: 1em;
+    
+
+  
+}
+.lwla .lwla-text{
+    width: 90%;
+    height: auto;
+   
+ 
+}
+.lwla .lwla-text h2{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 100px;
+   
+}
+.lwla .lwla-text p{
+    font-size: 1em;
+  
+}
+.second img{
+    margin-top: 25px;
+}
+
+}
+
